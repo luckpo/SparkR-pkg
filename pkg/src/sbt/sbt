@@ -24,8 +24,9 @@ SBT_VERSION=`awk -F "=" '/sbt\\.version/ {print $2}' ./project/build.properties`
 #URL1=http://typesafe.artifactoryonline.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/${SBT_VERSION}/sbt-launch.jar
 URL1=http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.6/sbt-launch.jar
 URL2=http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.6/sbt-launch.jar
-JAR=sbt/sbt-launch-${SBT_VERSION}.jar
-JAR=/Users/Salma/sbt-launch.jar
+#JAR=sbt/sbt-launch-${SBT_VERSION}.jar
+JAR=sbt/sbt-launch.jar
+#JAR=/Users/Salma/sbt-launch.jar
 
 # Download sbt launch jar if it hasn't been downloaded yet
 if [ ! -f ${JAR} ]; then
